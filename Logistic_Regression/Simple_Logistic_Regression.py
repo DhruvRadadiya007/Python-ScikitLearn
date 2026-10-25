@@ -47,3 +47,4 @@ plt.ylabel("Purchased House(probability)")
 plt.title("Age vs House probabilities")
 
 plt.show()
+
