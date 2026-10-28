@@ -2,8 +2,8 @@ import numpy as np
 import pandas as pd 
 from sklearn.linear_model import LogisticRegression
 from sklearn.model_selection import train_test_split
-
-
+from sklearn.metrics import confusion_matrix , ConfusionMatrixDisplay
+import matplotlib.pyplot as plt
 
 data = pd.read_csv("Logistic_Regression\diabetes2.csv")
 
@@ -26,3 +26,13 @@ model = LogisticRegression()
 model.fit(x_train,y_train)
 
 print(model.score(x_test,y_test))
+
+pred = model.predict(x_test)
+
+cm = confusion_matrix(y_test,pred)
+
+dis = ConfusionMatrixDisplay(confusion_matrix= cm, display_labels=['Positive','Negative'])
+dis.plot()
+plt.show()
+
+
