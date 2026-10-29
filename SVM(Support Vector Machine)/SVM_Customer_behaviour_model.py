@@ -16,7 +16,7 @@ x = encoded_data.drop("Purchased",axis=1)
 y = encoded_data["Purchased"]
 x_train,x_test,y_train,y_test = train_test_split(x,y,test_size=0.2,random_state=42)
 
-model = SVC(kernel="linear",C=1)
+model = SVC(kernel="linear",C=1) # kernel is used for selecting the (linear) or non linear regression (rb), c = model balancing 
 
 model.fit(x_train,y_train)
 
