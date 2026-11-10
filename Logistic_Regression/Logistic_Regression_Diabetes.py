@@ -5,7 +5,7 @@ from sklearn.model_selection import train_test_split
 from sklearn.metrics import confusion_matrix , ConfusionMatrixDisplay
 import matplotlib.pyplot as plt
 
-data = pd.read_csv("Logistic_Regression\diabetes2.csv")
+data = pd.read_csv("datasets\diabetes2.csv")
 
 print(data.info())
 print(data.describe())

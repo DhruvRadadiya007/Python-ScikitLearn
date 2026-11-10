@@ -2,7 +2,7 @@ import pandas as pd
 from sklearn.svm import SVC
 from sklearn.model_selection import train_test_split
 
-df = pd.read_csv("Logistic_Regression\Customer_Behaviour.csv")
+df = pd.read_csv("datasets\Customer_Behaviour.csv")
 
 print(df.head())
 

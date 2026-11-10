@@ -4,7 +4,7 @@ from sklearn.linear_model import LogisticRegression
 from sklearn.model_selection import train_test_split
 import matplotlib.pyplot as plt 
 
-df = pd.read_csv("Logistic_Regression\Customer_Behaviour.csv")
+df = pd.read_csv("datasets\Customer_Behaviour.csv")
 
 print(df.head())
 
